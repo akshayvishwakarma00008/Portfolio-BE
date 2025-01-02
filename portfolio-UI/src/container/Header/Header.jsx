@@ -1,6 +1,7 @@
 import './Header.scss'
 import {motion} from 'framer-motion'
 import { images } from '../../constants';
+import { AppWrap } from '../../wrapper';
 
 const scaleVariants = {
   whileInView: {
@@ -12,6 +13,7 @@ const scaleVariants = {
     },
   },
 };
+// eslint-disable-next-line react-refresh/only-export-components
 const Header = () => {
   return (
     <div className="app__header app__flex">
@@ -66,4 +68,5 @@ const Header = () => {
   )
 }
 
-export default Header
+// eslint-disable-next-line react-refresh/only-export-components
+export default AppWrap(Header,'home')

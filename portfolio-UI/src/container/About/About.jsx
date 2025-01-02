@@ -2,7 +2,9 @@ import "./About.scss";
 import {  useEffect,useState } from "react";
 import { motion } from "framer-motion";
 import { urlFor, client } from '../../client';
+import { AppWrap,MotionWrap  } from "../../wrapper";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
@@ -44,4 +46,9 @@ const About = () => {
   );
 };
 
-export default About;
+// eslint-disable-next-line react-refresh/only-export-components
+export default AppWrap(
+  MotionWrap(About, 'app__about'),
+  'about',
+  'app__whitebg',
+);
