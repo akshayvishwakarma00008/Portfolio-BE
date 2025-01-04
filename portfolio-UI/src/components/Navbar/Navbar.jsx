@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Navbar.scss'
-import {images} from "../../constants"
+// import {images} from "../../constants"
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
@@ -9,7 +9,8 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <img src={images.logo} alt="logo" />
+        {/* <img src={images.logo} alt="logo" /> */}
+        <span style={{color:"#293aa2",fontSize:'2rem', fontWeight:"bold"}}>PORTFOLIO</span>
       </div>
       <ul className='app__navbar-links'>
         {['home','about','work','skills','contact'].map((item)=>(
