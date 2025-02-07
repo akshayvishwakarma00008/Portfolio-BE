@@ -21,6 +21,13 @@ export default {
                 hotspot: true,
             },
         },
+        {
+            name: 'order', 
+            title: 'Order',
+            type: 'number',
+            description: 'Controls the display order of skills',
+            initialValue: 0,
+          },
 
     ]
 }
